@@ -9,7 +9,7 @@ class Dashboard(ttk.Frame):
     def __init__(self, master):
         super().__init__(master)
         self.updating = False
-        cryptocompare.cryptocompare._set_api_key_parameter("02a2c461980e076db08fea7971d9a41511dff6893b60fac034275c61cc591e48")
+        cryptocompare.cryptocompare._set_api_key_parameter(API_LICENCE_KEY)
 ######################################################################################
 #   User Entry
         self.cryptoLabel = ttk.Label(self, text="Cryptocurrency:", style="TLabel", font=('Courier', 9, "bold")).place(relx=0.25, rely=0.1, anchor='center')
